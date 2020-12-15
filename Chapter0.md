@@ -1,8 +1,7 @@
-# 깃헙 설치
-
+# GitHub Guide (Command Line Interface)
 
 - - -
-## <u><b>Why Do we Use Github  </b></u>
+## <b>Why Do we Use Github  </b>
 
 
 <ul>
@@ -26,7 +25,7 @@ With hard numbers") .
 
 - - - 
 
-## <u><b>Registering Github </b></u>
+## <b>Registering Github </b>
 
 (Requires minimum english level :p) to register in  [Github Register](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 <p align="center">
@@ -37,16 +36,16 @@ With hard numbers") .
 - - -
 
 
-## <u><b> Installing Git, and managing commit in local computer (when working alone) </b></u>
+## <b> Installing Git, and managing commit in local computer (when working alone) </b>
 
-There are more than one possible program to use Git source command. Some programs do not even require you to remember the code:
+There are more than one possible program to use Git source command. Some programs do not even require you to remember the code These are GUI based.
 
-I personally use Visual Studio Code and Github Desktop. However, when using remote-server (Linux hosted) It might be useful to learn these codes
+I personally use Visual Studio Code and Github Desktop. However, when using remote-server (Linux hosted) It might be useful to learn these codes. In this chapter, we briefly go through CLI (Command Line Interface).
 
-For a really basic program, I recommend you to install [Git](https://git-scm.com/downloads). Of course, this is for Windows user. For others like Linux, Mac, Unix, basic terminal is enough.
+For a really basic program, I recommend you to install [Git](https://git-scm.com/downloads). Of course, this is for Windows user. For others like Linux, Mac, Unix, 'terminal' is enough.
 
 
-By typing "Git" on terminal or git bash, if following results are printed, Git is properly installed.
+By typing "Git" on terminal or gitbash, if following results are printed, Git is properly installed.
 
 <p align="center">
 <img align="center" height=400 src="img/chapter0/GITBASH.png">
@@ -54,7 +53,7 @@ By typing "Git" on terminal or git bash, if following results are printed, Git i
 
 - - -
 
-## Creating Local Repository    
+## ___Creating Local Repository___
 
  Create a folder in any desired place. In my case it is:
 
@@ -89,7 +88,7 @@ Then choose a file you want to commit and type:
 Repeat the same process with addition update, then output is slightly different
 
 - - -
-## Going Back to previous commit
+## ___Going Back to previous commit___
 
 Typing `git log` helps you to visualize history of commits
 
@@ -108,7 +107,7 @@ By typing `git checkout -` you will return to the most recent commit.
 
 - - -
 
-## Commiting on remote repository
+## ___Commiting on remote repository___
 
 Till now you managed version locally. However, working with other people requires you to commit on remote repository.
 
@@ -139,7 +138,7 @@ When you go back to your remote repository Github, you can now check you file is
 
 - - -
 
-## Downloading remote repository to local repository
+## ___Downloading remote repository to local repository___
 
 This process is opposite of previous process.
 
@@ -151,6 +150,9 @@ Using `git clone <link> .` We can download/clone the files. '.' makes it to dire
 
 Now what happens to previous folder if you add new contents in new folder and commit the new files with `git push`.
 
-The previous folder will not known its change. In order to update the previous folder. You can go back to the directory of previous folder in GitBash and type `git pull origin master`
+The previous folder will not know its change. In order to update the previous folder. You can go back to the directory of previous folder in GitBash and type `git pull origin master`
 
     git pull origin master
+
+
+    This is basic command for CMI
