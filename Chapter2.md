@@ -1,4 +1,4 @@
-## GIT Description
+## GIT: Starting the Version Management (Basic)
 
 <p align="center">
 <img align="center" height=400 src="img/chapter2/Github_main.png">
@@ -19,4 +19,10 @@ Using `git add` we 'stage' two files. Now files are changed from 'untracked' to 
 
 Using `git commit`, files are now moved to 'unmodified'. We created a snapshot/version These 'unmodified' files can be modified
 
-Using `git push`, we can upload files from local repository to remote repository. Now other people can also edit these files
+Using `git push`, we can upload files from local repository to remote repository. 
+
+We can modify 'debug.py' and make a new file 'debug.html'. The status of 'debug.py' is modified and 'debug.html' is untracked.
+
+Unmodified 'README.md' cannot or does not required to be staged as it is not modified. However, other two filed can be staged with `git add` *'README.md' is already on the stage.
+
+If we `git commit`, the following files are commited/snapshotted and `git push` will add new version/snapshot to the remote repository.
