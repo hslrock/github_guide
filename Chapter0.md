@@ -9,7 +9,7 @@
 
 <ul>
 <li>Can be thought as Ctrl +Z command in other softwares
-<li>In team project, increase in partiicipating researchers results in increase in complexity of determining which version is final. Therefore, version management is essential
+<li>In team project, increase in participating researchers results in increase in complexity of determining which version is final. Therefore, version management is essential
 </li></ul>
 
 <ul>
@@ -38,14 +38,14 @@ With hard numbers") .
 
 ## <b> Installing Git, and managing commit in local computer (when working alone) </b>
 
-There are more than one possible program to use Git source command. Some programs do not even require you to remember the code These are GUI based.
+There is more than one possible program to use the Git source command. Some programs do not even require you to remember the code. These are GUI based.
 
-I personally use Visual Studio Code and Github Desktop. However, when using remote-server (Linux hosted) It might be useful to learn these codes. In this chapter, we briefly go through CLI (Command Line Interface).
+I use Visual Studio Code and Github Desktop. However, when using remote-server (Linux hosted) It might be useful to learn these codes. In this chapter, we briefly go through the CLI (Command Line Interface).
 
-For a really basic program, I recommend you to install [Git](https://git-scm.com/downloads). Of course, this is for Windows user. For others like Linux, Mac, Unix, 'terminal' is enough.
+For a really basic program, I recommend you to install [Git](https://git-scm.com/downloads). Of course, this is for Windows users. For others like Linux, Mac, Unix, 'terminal' is enough.
 
 
-By typing "Git" on terminal or gitbash, if following results are printed, Git is properly installed.
+By typing "Git" on terminal or gitbash, if the following results are printed, Git is properly installed.
 
 <p align="center">
 <img align="center" height=400 src="img/chapter0/GITBASH.png">
@@ -53,7 +53,7 @@ By typing "Git" on terminal or gitbash, if following results are printed, Git is
 
 - - -
 
-## ___Creating Local Repository___
+## Creating Local Repository
 
  Create a folder in any desired place. In my case it is:
 
@@ -68,9 +68,9 @@ By typing "Git" on terminal or gitbash, if following results are printed, Git is
 <img align="center" height=400 src="img/chapter0/Git_Init.png">
 </p>
 
-This command creates .git folder in the directory (hidden) It stores the version's information, remote address and etc.
+This command creates a .git folder in the directory (hidden) It stores the version's information, remote address, etc.
 
-Now we need to create first commit, In order to manage the version, we must register our information beforehand. If working locally, these are unnecessary, but since we will use Github in future, please type in same account information as you registed in Github.com 
+Now we need to create the first commit, To manage the version, we must register our information beforehand. If working locally, these are unnecessary, but since we will use Github in the future, please type in the same account information as you registered in Github.com 
 
     git config --global user.email "your_email@gmail.com"
 
@@ -83,22 +83,22 @@ Then choose a file you want to commit and type:
 
     git commit -m "Description of Commit"
 
--m represents message, if  [`1 file changed, 1 insertion (+)`] are shown, commit succeeded
+-m represents a message, if  [`1 file changed, 1 insertion (+)`] is shown, commit succeeded
 
 Repeat the same process with addition update, then output is slightly different
 
 - - -
-## ___Going Back to previous commit___
+## Going Back to the previous commit
 
-Typing `git log` helps you to visualize history of commits
+Typing `git log` helps you to visualize the history of commits
 
     git log
 
-value after commit is the commitID
+value after the commit is the commitID
 
 
 
-Typing `git checkout CommitID` makes you go back to previous commits (first 7 characters of CommitID is also fine), 
+Typing `git checkout CommitID` makes you go back to previous commits (the first 7 characters of CommitID is also fine), 
     
     git checkout <Commit ID>
 
@@ -107,52 +107,52 @@ By typing `git checkout -` you will return to the most recent commit.
 
 - - -
 
-## ___Commiting on remote repository___
+## Commiting to the remote repository
 
-Till now you managed version locally. However, working with other people requires you to commit on remote repository.
+Till now you managed the version locally. However, working with other people requires you to commit to the remote repository.
 
 
 Login in Github.com and from the top navigation menu with + sign you can select to add "New Repository" 
 
-Ignore other things for now, type in repository Name and Click Create repository.
-
-Image
+Ignore other things, for now, type in repository Name and+ click Create repository.
 
 
-From now on you can access the remote repository from following address
 
-    https://github.com/hslrock/test.git
+From now on you can access the remote repository from the following address. 
 
-Image
+
+
+    https://github.com/<UserName>/<RepositoryName>.git
+
 
 Now under your previously made directory, type `git remote add origin youraddress`
 
-    git remote add origin https://github.com/hslrock/test.git
+    git remote add origin https://github.com/<UserName>/<RepositoryName>.git
 
 
-By using push command, we can upload commits those were made in previous sub-chapter, it could ask you to type in your Github accound information
+By using the push command, we can upload commits that were made in the previous sub-chapter to the GitHub website, it could ask you to type in your Github account information
 
     git push origin master
 
-When you go back to your remote repository Github, you can now check you file is uploaded and also check the contents.
+When you go back to your remote repository Github, you can now check your file is uploaded and also check the contents.
 
 - - -
 
-## ___Downloading remote repository to local repository___
+## Downloading remote repository to local repository
 
-This process is opposite of previous process.
+This process is the opposite of the previous process.
 
 Create a random folder to store the remote repository. Move to the directory in GitBash
 
 Using `git clone <link> .` We can download/clone the files. '.' makes it to directly download into the folder, Without it, it will create a folder with the repository name and download repository to the new folder
 
-    git clone https://github.com/hslrock/test.git
+    git clone https://github.com/<UserName>/<RepositoryName>.git
 
-Now what happens to previous folder if you add new contents in new folder and commit the new files with `git push`.
+Now, what happens to the previous folder if you add new contents in the new folder and commit the new files with `git push`.
 
-The previous folder will not know its change. In order to update the previous folder. You can go back to the directory of previous folder in GitBash and type `git pull origin master`
+The previous folder will not know its change. To update the previous folder. You can go back to the directory of the previous folder in GitBash and type `git pull origin master`
 
     git pull origin master
 
 
-    This is basic command for CMI
+These were basic command for CLI
