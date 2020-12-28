@@ -85,7 +85,7 @@ Then choose a file you want to commit and type:
 
 -m represents a message, if  [`1 file changed, 1 insertion (+)`] is shown, commit succeeded
 
-Repeat the same process with addition update, then output is slightly different
+Try repating the same process with additional update, then output is slightly different
 
 - - -
 ## Going Back to the previous commit
