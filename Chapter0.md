@@ -114,7 +114,7 @@ Till now you managed the version locally. However, working with other people req
 
 Login in Github.com and from the top navigation menu with + sign you can select to add "New Repository" 
 
-Ignore other things, for now, type in repository Name and+ click Create repository.
+Ignore other things, for now, type in repository Name and continue to "Create repository".
 
 
 
@@ -125,12 +125,12 @@ From now on you can access the remote repository from the following address.
     https://github.com/<UserName>/<RepositoryName>.git
 
 
-Now under your previously made directory, type `git remote add origin youraddress`
+Now under your previously made directory, type `git remote add origin youraddress` in gitbash
 
     git remote add origin https://github.com/<UserName>/<RepositoryName>.git
 
 
-By using the push command, we can upload commits that were made in the previous sub-chapter to the GitHub website, it could ask you to type in your Github account information
+By using the push command, we can upload commits that were made in the previous step to the GitHub website, it could ask you to type in your Github account information
 
     git push origin master
 
@@ -144,11 +144,11 @@ This process is the opposite of the previous process.
 
 Create a random folder to store the remote repository. Move to the directory in GitBash
 
-Using `git clone <link> .` We can download/clone the files. '.' makes it to directly download into the folder, Without it, it will create a folder with the repository name and download repository to the new folder
+Using `git clone <link> .` We can download/clone the files. '.' makes it to directly download into the folder, Without '.', it will create a folder with the repository name and download repository to the new folder
 
     git clone https://github.com/<UserName>/<RepositoryName>.git
 
-Now, what happens to the previous folder if you add new contents in the new folder and commit the new files with `git push`.
+Now, what happens to the previous folder (the folder which was used in creating local repository/uploading to the remote repository) if you add new contents in this new folder and commit the new files with `git push`.
 
 The previous folder will not know its change. To update the previous folder. You can go back to the directory of the previous folder in GitBash and type `git pull origin master`
 
